@@ -109,6 +109,3 @@ deactivate
 [Pants docs][900]
 
 [900]: https://www.pantsbuild.org/docs
-
-
-
