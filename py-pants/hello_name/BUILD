@@ -11,8 +11,8 @@ python_distribution(
     wheel=True,
     sdist=True,
     provides=setup_py(
-        name="hello_world",
+        name="hello_name",
         version="0.0.1",
-        description="Greet with hello world",
+        description="Greet with hello name",
     ),
 )

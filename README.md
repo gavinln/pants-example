@@ -104,6 +104,97 @@ nvim python-example-file.py
 deactivate
 ```
 
+## Setup Poetry
+
+### Setup `hello_name` project
+
+1. List current pyenv version and location of Python executable
+
+```
+pyenv version; pyenv which python
+```
+
+2. Change to `hello_name` packages directory
+
+```
+cd py-poetry/hello_name
+```
+
+3. Setup Python for Poetry environment
+
+```
+poetry env use <PYTHON-EXECUTABLE>
+```
+
+4. Create a Poetry environment
+
+```
+poetry run python -V
+```
+
+5. Run Python code
+
+```
+poetry run python -c "from hello_name.hello_name import greet; print(greet('John'))"
+```
+
+6. Add pytest
+
+```
+poetry add pytest
+```
+
+7. Run pytest
+
+```
+poetry run pytest
+```
+
+### Setup `hello_world` project
+
+1. List current pyenv version and location of Python executable
+
+```
+pyenv version; pyenv which python
+```
+
+2. Change to `hello_world` packages directory
+
+```
+cd py-poetry/hello_world
+```
+
+3. Setup Python for Poetry environment
+
+```
+poetry env use <PYTHON-EXECUTABLE>
+```
+
+4. Create a Poetry environment
+
+```
+poetry run python -V
+```
+
+5. Add third party dependency
+
+```
+poetry add colorama
+```
+
+6. Add local dependency
+
+```
+poetry add ../hello_name
+```
+
+7. Run Python code
+
+```
+poetry run python -c "from hello_world.hello_world import greet; print(greet())"
+poetry run python -c "from hello_world.hello_world import *; print_greet()"
+```
+
 ## Links
 
 [Pants docs][900]
