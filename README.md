@@ -1,5 +1,28 @@
 # Pants example
 
+The Pants build system multiple programming languages including Go, Java, Python, Scala, Kotlin, and Shell scripts. It is easy to adopt, use, and extend. With minimal BUILD file metadata/boilerplate, Pants can infer most of the dependency information on its own. It has a rich plugin API for customization and seamless integration with Git.
+
+Pants works best with a monorepo architecture, containing multiple projects—often using multiple programming languages in a single unified repository. To speed up execution, Pants supports concurrent and remote execution and shared result caching.
+
+Pants supports the following Python tools out of the box
+
+* pytest - framework to write and execute small, readable tests
+* black - a code fast code formatter that is deterministic
+* yapf - a Python formatter from Google (not official product)
+* flake8 - a tool to enforce the Python style guide
+* docformatter - automatically formats docstrings
+* pydocstyle - checks compliance with Python docstring conventions
+* isort - sorts Python imports alphabetically and into sctions
+* pylint - static code analyzer that checks for erros and enforces standards
+* bandit - find common security issues
+* autoflake - removes unused imports and unused variables
+* pyupgrade - upgrades syntax to newer versions of Python
+* MyPy - static type checker that catches type-related bugs
+* setuptools - package development and distribution utility
+* pex - creates executable Python environments that bundles dependencies
+* PyOxidizer - packaging and distribution utility that embeds Python
+* IPython - interactive shell for Python with enhanced functionality
+
 [Pants github][100]
 
 [100]: https://github.com/pantsbuild/pants
